@@ -115,14 +115,3 @@ bash run_hybrid.sh
 The final model is `tgc`, i.e. TGC + ZTV with LoRA on padded frames (`train.py --frame-mode pad --tgc`).
 Metrics are reported as mean and standard deviation over three seeds, and differences with 95% confidence
 intervals from a paired bootstrap over test videos (`uavnarr_exp/paired_bootstrap.py`, 10,000 resamples).
-
-## Citation
-
-```bibtex
-@inproceedings{tong2027uavnarrator,
-  title     = {Target-Level Captioning for {UAV} Videos by Tracker-Guided Token Compression},
-  author    = {Tong, Jingcheng and Fan, Miao and Gao, Bo and Ma, Chen and Li, Guohong},
-  booktitle = {Database Systems for Advanced Applications (DASFAA)},
-  year      = {2027}
-}
-```
