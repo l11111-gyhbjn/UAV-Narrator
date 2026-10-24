@@ -7,9 +7,8 @@ UAV-Narrator generates target-level captions for UAV videos from the frames and 
 tracked target. It builds on a frozen VideoLLaMA 2-7B and adds three components:
 
 - **TGC** (target-guided token compression): keeps the token cells covered by the tracked box at full
-  resolution and pools the background (845 -> about 135 visual tokens per video);
-- **ZTV** (zoomed target view): encodes a crop around the box with the same frozen encoder
-  (16 tokens per slice, about 215 visual tokens per video in total);
+  resolution and pools the background;
+- **ZTV** (zoomed target view): encodes a crop around the box with the same frozen encoder;
 - **PEA** (parameter-efficient adaptation): LoRA on the language model plus 60 zero-initialized
   embeddings; the vision encoder, the connector and the decoder stay frozen.
 
